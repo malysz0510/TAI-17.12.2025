@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okna Dialogowe</title>
+</head>
+<body>
+    <script>
+let kod = prompt("Podaj tajny kod dostępu:");
+
+if (kod === null || kod === "") {
+    alert("Odmowa dostępu: Brak danych.");
+} else if (kod === "JS2024") {
+    alert("Dostęp przyznany. Witaj!");
+} else {
+    alert("Kod nieprawidłowy. Odmowa dostępu.");
+}
+
+    </script>
+</body>
+</html>

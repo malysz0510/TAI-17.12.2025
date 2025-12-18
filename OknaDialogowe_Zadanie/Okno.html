@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let produkt = prompt("Jaki produkt chcesz zamówić? (Laptop lub Mysz)", "Laptop");
+
+if (produkt === null || (produkt.toLowerCase() !== "laptop" && produkt.toLowerCase() !== "mysz")) {
+    alert("Produkt nieznany lub anulowano. Proces zamawiania przerwany.");
+} else {
+    let cena, komunikatPotwierdzenia;
+
+    if (produkt.toLowerCase() === "laptop") {
+        cena = 4500;
+        komunikatPotwierdzenia = `Czy na pewno chcesz zamówić Laptopa za ${cena} PLN?`;
+    } else if (produkt.toLowerCase() === "mysz") {
+        cena = 150;
+        komunikatPotwierdzenia = `Czy na pewno chcesz zamówić Mysz za ${cena} PLN?`;
+    }
+
+    let potwierdzenie = confirm(komunikatPotwierdzenia);
+
+    if (potwierdzenie) {
+        alert(`Zamówienie produktu ${produkt} zostało złożone. Dziękujemy!`);
+
+    } else {
+        alert("Zamówienie anulowane przez użytkownika.");
+    }
+}vvvvvvvvv
+    </script>
+</body>
+</html>
